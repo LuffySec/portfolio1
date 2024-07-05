@@ -433,7 +433,7 @@ body {
     margin-right: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 390px) and (max-width: 600px) {
     body {
         background-size: 200rem;
     }
@@ -467,7 +467,7 @@ body {
         font-size: 12px;
         border-radius: 0;
         width: 400px;
-        border-radius: 20px;
+        margin-right: -25px;
     }
     .Achievement p:nth-of-type(2) {
         margin-left: -300px;
@@ -524,6 +524,140 @@ body {
         flex-direction: column;
         position: relative;
         right: 10px;
+        margin-top: -3rem;
+    }
+    .project4 {
+        margin-top: 3rem;
+    }
+    .project2 {
+        margin-top: 3rem;
+    }
+    .project2 h2 {
+        font-size: 20px;
+    }
+    .project2 img {
+        width: 18rem;
+    }
+    .project2 {
+        width: 20rem;
+    }
+    .project3 {
+        margin-top: 3rem;
+    }
+    .project3 h2 {
+        font-size: 20px;
+    }
+    .project3 img {
+        width: 18rem;
+    }
+    .project3 {
+        width: 20rem;
+    }
+    .project3 {
+        margin-top: 3rem;
+    }
+    .project4 h2 {
+        font-size: 20px;
+    }
+    .project4 img {
+        width: 18rem;
+    }
+    .project4 {
+        width: 20rem;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 385px) {
+    body {
+        background-size: 200rem;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    .section1 p {
+        text-align: center;
+    }
+    .blob {
+        width: 300px;
+        margin-left: 2rem;
+    }
+    .text {
+        margin-top: -3rem;
+    }
+    .text p {
+        margin-left: -3.5rem;
+    }
+    .text h1 {
+        font-size: 25px;
+        margin-left: -4rem;
+    }
+    .linkedin {
+        width: 2rem;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    .navbar a:link, a:visited {
+        font-size: 12px;
+        border-radius: 0;
+        width: 400px;
+        margin-right: -25px;
+    }
+    .Achievement p:nth-of-type(2) {
+        margin-left: -300px;
+    }
+    
+    .Achievement p:nth-of-type(1) {
+        margin-left: -500px;
+    }
+    
+    .Achievement p:nth-of-type(4) {
+        margin-left: 300px;
+    }
+    .Achievement {
+        margin-left: 430px;
+    }
+    .Achievement p {
+        width: 70%;
+        width: 20rem;
+    }
+    .Achievement p:nth-of-type(2) {
+        margin-left: -500px;
+    }
+    .Achievement p:nth-of-type(3) {
+        margin-left: -500px;
+    }
+    .Achievement p:nth-of-type(4) {
+        margin-left: -500px;
+    }
+    .section2 {
+        padding-top: 10rem;
+    }
+    .background img {
+        display: flex;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .flex {
+        flex-direction: column;
+        position: relative;
+        right: 30px;
+    }
+    .project1 h2 {
+        font-size: 20px;
+    }
+    .project1 img {
+        width: 18rem;
+    }
+    .project1 {
+        width: 20rem;
+    }
+    .flex1 {
+        flex-direction: column;
+        position: relative;
+        right: 30px;
         margin-top: -3rem;
     }
     .project4 {
