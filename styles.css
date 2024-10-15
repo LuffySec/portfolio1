@@ -267,170 +267,90 @@ body {
     text-align: center;
     padding-top: 7rem;
     padding-bottom: 3rem;
+    background-color: #f9f9f9; /* Warna latar belakang netral */
 }
 
-
-.project1 {
-    background-color: #7CFC00;
-    width: 35rem;
-    margin-left: 50px;
-    border-radius: 30px;
-    padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.flex, .flex1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
 }
 
-.project1 img {
-    width: 30rem;
-    border-radius: 20px;
-    padding-bottom: 3rem;
+.project1, .project2, .project3, .project4 {
+    background-color: #fff; /* Warna latar belakang putih */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
 }
 
-.project1 h2 {
-    padding-top: 5rem;
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
 
-.project1 a:link, a:visited {
-    background-color: #00008B;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
+.project1 img, .project2 img, .project3 img, .project4 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
     border-radius: 10px;
-    font-size: 10px;
-    transition: 0.3s;
-    margin-left: 10px;
 }
 
-.project1 a:hover, a:active {
-    background-color: #7CFC00;
+.project1:hover img, .project2:hover img, .project3:hover img, .project4:hover img {
+    transform: scale(1.1);
 }
 
-.project2 {
-    background-color: #00FF7F;
-    width: 35rem;
-    margin-left: 50px;
-    border-radius: 30px;
-    padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.project1 h2, .project2 h2, .project3 h2, .project4 h2 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
-.project2 img {
-    width: 30rem;
-    border-radius: 20px;
-    padding-bottom: 3rem;
+.project1:hover h2, .project2:hover h2, .project3:hover h2, .project4:hover h2 {
+    color: #00008B;
 }
 
-.project2 h2 {
-    padding-top: 5rem;
-}
-
-.project2 a:link, a:visited {
-    background-color: #00008B;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
+.project1 a, .project2 a, .project3 a, .project4 a {
     display: inline-block;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 10px;
-    transition: 0.3s;
-    margin-left: 10px;
-}
-
-.project2 a:hover, a:active {
-    background-color: #7CFC00;
-}
-
-.project3 {
-    background-color: #00FF7F;
-    width: 35rem;
-    margin-left: 50px;
-    border-radius: 30px;
-    padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.project3 img {
-    width: 30rem;
-    border-radius: 20px;
-    padding-bottom: 3rem;
-}
-
-.project3 h2 {
-    padding-top: 5rem;
-}
-
-.project3 a:link, a:visited {
-    background-color: #00008B;
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    background: linear-gradient(45deg, #00008B, #1E90FF);
     color: white;
-    padding: 14px 25px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     font-weight: bold;
-    border-radius: 10px;
-    font-size: 10px;
-    transition: 0.3s;
-    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project3 a:hover, a:active {
-    background-color: #7CFC00;
+.project1 a:hover, .project2 a:hover, .project3 a:hover, .project4 a:hover {
+    background: linear-gradient(45deg, #32CD32, #7CFC00);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.project4 {
-    background-color: #7CFC00;
-    width: 35rem;
-    margin-left: 50px;
-    border-radius: 30px;
-    padding-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.project1 a::before, .project2 a::before, .project3 a::before, .project4 a::before {
+    content: '🔗'; /* Ikon link */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
 }
 
-.project4 img {
-    width: 30rem;
-    border-radius: 20px;
-    padding-bottom: 3rem;
+.project1 a span, .project2 a span, .project3 a span, .project4 a span {
+    margin-left: 1.5rem; /* Menambah jarak antara ikon dan teks */
 }
 
-.project4 h2 {
-    padding-top: 5rem;
-}
-
-.project4 a:link, a:visited {
-    background-color: #00008B;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 10px;
-    transition: 0.3s;
-    margin-left: 10px;
-}
-
-.project4 a:hover, a:active {
-    background-color: #7CFC00;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    margin-right: 30px;
-}
-
-.flex1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    margin-right: 30px;
+.project1 a:hover::before, .project2 a:hover::before, .project3 a:hover::before, .project4 a:hover::before {
+    transform: translateY(-50%) scale(1.2);
 }
 
 @media only screen and (min-width: 390px) and (max-width: 600px) {
@@ -727,5 +647,24 @@ body {
     }
     .project2 {
         margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex, .flex1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .project1, .project2, .project3, .project4 {
+        width: 90%; /* Menggunakan lebar 90% untuk memberikan ruang di sisi */
+        margin-bottom: 1rem; /* Menambah jarak antar proyek */
+    }
+
+    .project1 img, .project2 img, .project3 img, .project4 img {
+        width: 100%;
+        height: auto;
     }
 }
