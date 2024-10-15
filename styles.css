@@ -44,7 +44,7 @@ body {
     padding-right: 40px;
 }
 
-  .blob{
+.blob{
     background-image: url(./images/1700825831367.jpeg);
     width: 600px;
     height: 380px;
@@ -89,26 +89,24 @@ body {
 }
 
 .text h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
 }
   
-  /* The typing effect */
-  @keyframes typing {
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #0000CD; }
-  }
+}
 
 .instagram {
     width: 2rem;
@@ -172,7 +170,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: auto;
+    margin-left: 100px;
 }
 
 .section2 h1 {
@@ -196,7 +194,7 @@ body {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
 
 @keyframes fadeIn {
     0% {opacity: 0;}
@@ -267,90 +265,84 @@ body {
     text-align: center;
     padding-top: 7rem;
     padding-bottom: 3rem;
-    background-color: #f9f9f9; /* Warna latar belakang netral */
-}
-
-.flex, .flex1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 2rem;
 }
 
 .project1, .project2, .project3, .project4 {
-    background-color: #fff; /* Warna latar belakang putih */
-    border-radius: 15px;
+    background-color: #f0f0f0;
+    width: 35rem;
+    margin-left: 50px;
+    border-radius: 20px;
+    padding-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-    position: relative;
-    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project1 img, .project2 img, .project3 img, .project4 img {
+    width: 30rem;
+    border-radius: 15px;
+    padding-bottom: 3rem;
+    transition: transform 0.3s;
 }
 
 .project1:hover, .project2:hover, .project3:hover, .project4:hover {
     transform: translateY(-10px);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px;
 }
 
-.project1 img, .project2 img, .project3 img, .project4 img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
-}
-
-.project1:hover img, .project2:hover img, .project3:hover img, .project4:hover img {
-    transform: scale(1.1);
-}
-
-.project1 h2, .project2 h2, .project3 h2, .project4 h2 {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.project1:hover h2, .project2:hover h2, .project3:hover h2, .project4:hover h2 {
-    color: #00008B;
-}
-
-.project1 a, .project2 a, .project3 a, .project4 a {
-    display: inline-block;
-    margin: 1rem 0;
-    padding: 0.5rem 2rem;
-    background: linear-gradient(45deg, #00008B, #1E90FF);
+.project1 a:link, .project1 a:visited,
+.project2 a:link, .project2 a:visited,
+.project3 a:link, .project3 a:visited,
+.project4 a:link, .project4 a:visited {
+    background-color: #333;
     color: white;
+    padding: 14px 25px;
+    text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
     font-weight: bold;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 12px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
 }
 
-.project1 a:hover, .project2 a:hover, .project3 a:hover, .project4 a:hover {
-    background: linear-gradient(45deg, #32CD32, #7CFC00);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+.project1 a:hover, .project1 a:active,
+.project2 a:hover, .project2 a:active,
+.project3 a:hover, .project3 a:active,
+.project4 a:hover, .project4 a:active {
+    background-color: #555;
+    color: #fff;
 }
 
-.project1 a::before, .project2 a::before, .project3 a::before, .project4 a::before {
-    content: '🔗'; /* Ikon link */
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
+.project1 h2 {
+    padding-top: 5rem;
 }
 
-.project1 a span, .project2 a span, .project3 a span, .project4 a span {
-    margin-left: 1.5rem; /* Menambah jarak antara ikon dan teks */
+.project2 h2 {
+    padding-top: 5rem;
 }
 
-.project1 a:hover::before, .project2 a:hover::before, .project3 a:hover::before, .project4 a:hover::before {
-    transform: translateY(-50%) scale(1.2);
+.project3 h2 {
+    padding-top: 5rem;
+}
+
+.project4 h2 {
+    padding-top: 5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-right: 30px;
+}
+
+.flex1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    margin-right: 30px;
 }
 
 @media only screen and (min-width: 390px) and (max-width: 600px) {
@@ -634,34 +626,18 @@ body {
     }
     .flex {
         flex-direction: column;
-        align-items: center;    }
+        align-items: center;
+        margin-right: 30px;
+    }
     .flex1 {
         flex-direction: column;
         align-items: center;
+        margin-right: 30px;
     }
     .project4 {
         margin-top: 3rem;
     }
     .project2 {
         margin-top: 3rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .flex, .flex1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        margin-left: 25px;
-    }
-
-    .project1, .project2, .project3, .project4 {
-        width: 90%; 
-        margin-bottom: 1rem; 
-    }
-    .project1 img, .project2 img, .project3 img, .project4 img {
-        width: 100%;
-        height: auto;
     }
 }
